@@ -1,6 +1,11 @@
 <?php
 
 use App\Http\Controllers\Web\HomeController;
+use App\Http\Controllers\Web\ContactController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +41,14 @@ Route::middleware([
 // ----------------------------------------------------------------
 
 Route::get('/web', [HomeController::class, 'index'])->name('web.index');
-Route::get('/', function () {
-    return view('/web.blog');
-});
+
+
+
+Route::get('/web/blog', [PostController::class, 'index'])->name('web.blog');
+Route::get('/web/blog/{slug}', [PostController::class, 'show'])->name('web.blog.show');
+Route::get('/web/blog/category/{id}', [CategoryController::class, 'show'])->name('web.blog.category');
+
+
+
+Route::get('/web/contact', [ContactController::class, 'index'])->name('web.contact.index');
+Route::post('/web/contact', [ContactController::class, 'store'])->name('web.contact.store');

@@ -50,7 +50,7 @@
                         right: 25px;
                     }
                 }
-                
+
             }
             &--time {
                 display: inline-block;
@@ -93,11 +93,11 @@
                     line-height: 87px;
                     letter-spacing: -0.02;
                     text-transform: capitalize;
-                    margin-bottom: -20px;   
+                    margin-bottom: -20px;
                 }
                 &--content {
                     line-height: 24px;
-                    max-width: 406px;  
+                    max-width: 406px;
                     padding-bottom: 24px;
                 }
                 &--acc-title {
@@ -112,7 +112,7 @@
                     img {
                         margin-right: 8px;
                     }
-                    
+
                 }
             }
         }
@@ -298,7 +298,7 @@
             text-align: center;
             margin-bottom: 15px;
         }
-        
+
         h1 {
             font-weight: 700;
             font-family: var(--font-heading);
@@ -346,7 +346,7 @@
     }
 }
 
-  
+
   .chevron {
     position: absolute;
     width: 34px;
@@ -355,15 +355,15 @@
     transform: scale3d(0.5, 0.5, 0.5);
     animation: move 3s ease-out infinite;
   }
-  
+
   .chevron:first-child {
     animation: move 3s ease-out 1s infinite;
   }
-  
+
   .chevron:nth-child(2) {
     animation: move 3s ease-out 2s infinite;
   }
-  
+
   .chevron:before,
   .chevron:after {
     content: ' ';
@@ -373,22 +373,22 @@
     width: 51%;
     background: #fff;
   }
-  
+
   .chevron:before {
     left: 0;
     transform: skew(0deg, 30deg);
   }
-  
+
   .chevron:after {
     right: 0;
     width: 50%;
     transform: skew(0deg, -30deg);
   }
-  
+
   @keyframes move {
     25% {
       opacity: 1;
-  
+
     }
     33% {
       opacity: 1;
@@ -403,7 +403,7 @@
       transform: translateY(65px) scale3d(0.5, 0.5, 0.5);
     }
   }
-  
+
   .text {
     display: block;
     margin-top: 75px;
@@ -416,7 +416,7 @@
     opacity: .25;
     animation: pulse 2s linear alternate infinite;
   }
-  
+
   @keyframes pulse {
     to {
       opacity: 1;

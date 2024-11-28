@@ -37,7 +37,7 @@
     23. backtotop
     24. breadcrumb
     25. sec-title
-    
+
 
 -----------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap");
@@ -385,7 +385,10 @@ p, li, span {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center; }
+  white-space: nowrap;
+  align-items: center;
+ }
+
 
 .ul_li > li, .ul_li_right > li, .ul_li_center > li, .ul_li_between > li {
   float: left;
@@ -393,7 +396,11 @@ p, li, span {
   display: inline-block; }
 
 .ul_li {
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  flex-wrap: nowrap; /* يمنع العناصر من الانتقال إلى سطر جديد */
+
+
+}
 
 .ul_li_center {
   justify-content: center; }
@@ -4475,9 +4482,13 @@ body[data-aos-easing=ease] [data-aos] {
     padding-bottom: 13px; }
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
       .xb-feature .xb-item--title {
-        font-size: 20px; } }
+        font-size: 20px;
+    } }
+
+
   .xb-feature .xb-item--content {
-    line-height: 24px; }
+    line-height: 24px;
+    padding-bottom: 20px; }
     @media (max-width: 1199px) {
       .xb-feature .xb-item--content {
         max-width: 320px;
@@ -5113,7 +5124,9 @@ body[data-aos-easing=ease] [data-aos] {
       padding-bottom: 0; } }
 .faq__blockchain-two .accordion-inner .content .list-item {
   padding-top: 13px;
-  margin-bottom: 11px; }
+  margin-bottom: 11px;
+  text-align: justify;
+ }
 
 @media (max-width: 991px) {
   .faq-shape_two {
@@ -6229,22 +6242,22 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
     .hero {
       padding-top: 100px; } }
   .hero--sec-titlt .title {
-    font-size: 102px;
+    font-size: 80px;
     line-height: 87px;
     letter-spacing: -0.03em; }
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
       .hero--sec-titlt .title {
-        font-size: 90px; } }
+        font-size: 65px; } }
     @media (max-width: 1199px) {
       .hero--sec-titlt .title {
-        font-size: 60px;
+        font-size: 40px;
         letter-spacing: 0; } }
     @media (max-width: 991px) {
       .hero--sec-titlt .title {
         font-size: 43px; } }
     @media (max-width: 767px) {
       .hero--sec-titlt .title {
-        font-size: 30px;
+        font-size: 20px;
         line-height: 46px; } }
   .hero__date-sec {
     text-align: center; }
